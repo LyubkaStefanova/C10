@@ -3,6 +3,7 @@ package chapter10.excercises;
 import chapter10.helpers.WeekDaysCollection;
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -19,5 +20,6 @@ public class EmptyMethods extends WeekDaysCollection {
 
         addDaysToWeek();
         assertEquals(7, daysOfWeek.size());
+        assertTrue(daysOfWeek.isEmpty());
     }
 }
