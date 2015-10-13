@@ -8,16 +8,16 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Lyubka on 10/12/2015.
  */
-public class EmptyMethods extends WeekDaysCollection {
+public class EmptyMethods {//extends WeekDaysCollection {
 
     @Test
     public void clear(){
-//        addDaysToWeekends();
+//       .addDaysToWeekends();
 //        addDaysToWorkdays();
 //        daysOfWeek.addAll(workDays);
 //        daysOfWeek.addAll(weekendDays);
 
-        addDaysToWeek();
-        assertEquals(7, daysOfWeek.size());
+        WeekDaysCollection.addDaysToWeek();
+        assertEquals(7, WeekDaysCollection.daysOfWeek.size());
     }
 }

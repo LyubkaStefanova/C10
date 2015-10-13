@@ -9,33 +9,33 @@ import java.util.Collection;
  * Collections are setted here - workdays, daysOfWeeek and weekendDays
  */
 public class WeekDaysCollection {
-    protected Collection<String> workDays = new <String>ArrayList(); //workdays is a variable from ArrayList containing only string; Collection is the interface; ArrayList is the class that implements the Collection interface
-    protected Collection <String> daysOfWeek = new <String>ArrayList();
-    protected Collection<String> weekendDays = new <String>ArrayList();
+    public static Collection<String> workDays = new <String>ArrayList(); //workdays is a variable from ArrayList containing only string; Collection is the interface; ArrayList is the class that implements the Collection interface
+    public static Collection <String> daysOfWeek = new <String>ArrayList();
+    public static Collection<String> weekendDays = new <String>ArrayList();
 
 
-    public void addDaysToWorkdays(){
+    public static void addDaysToWorkdays(){
 
-        this.workDays.add("Monday");
-        this.workDays.add("Tuesday");
-        this.workDays.add("Wednesday");
-        this.workDays.add("Thursday");
-        this.workDays.add("Friday");
+        workDays.add("Monday");
+        workDays.add("Tuesday");
+        workDays.add("Wednesday");
+        workDays.add("Thursday");
+        workDays.add("Friday");
 
     }
-    public void addDaysToWeekends(){
+    public static void addDaysToWeekends(){
 
-        this.weekendDays.add("Saturday");
-        this.weekendDays.add("Sunday");
+        weekendDays.add("Saturday");
+        weekendDays.add("Sunday");
     }
 
-    public void addDaysToWeek(){
+    public static void addDaysToWeek(){
 
         addDaysToWorkdays();
         addDaysToWeekends();
 
-        this.daysOfWeek.addAll(workDays);
-        this.daysOfWeek.addAll(weekendDays);
+        daysOfWeek.addAll(workDays);
+        daysOfWeek.addAll(weekendDays);
     }
 
 
